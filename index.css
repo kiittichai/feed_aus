@@ -1,0 +1,131 @@
+
+
+/* CSS สำหรับหน้าจอขนาดเล็ก (mobile) */
+@media only screen and (max-width: 600px) {
+    #table1, #table2, #table3 {
+        width: 100%;
+    }
+    th, td {
+        font-size: 14px;
+    }
+}
+/* CSS สำหรับหน้าจอขนาดกลาง (tablet) */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+    #table1, #table2, #table3 {
+        width: 80%;
+    }
+    th, td {
+        font-size: 16px;
+    }
+}
+/* CSS สำหรับหน้าจอขนาดใหญ่ (desktop) */
+@media only screen and (min-width: 1025px) {
+    #table1, #table2, #table3{
+        width: 50%;
+    }
+    th, td {
+        font-size: 18px;
+    }
+}
+@font-face {
+    font-family: 'sukhumvit';
+    src: url('Fonts/SukhumvitSet-Text.ttf') format('truetype');
+    unicode-range: U+E00-E7F;
+}
+div h1,h4{
+    margin: 10px;;
+
+}
+div {
+    text-align: center;
+    margin: 0; /* เพิ่มระยะห่าง */
+}
+h1, h2 {
+    margin: 0; /* ลบ margin ที่ถูกกำหนดใน h1, h2, h4 */
+}
+body {
+    font-family: 'sukhumvit',sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+h1, h2 , h4 {
+    text-align: center;
+    color: #020202; /* รหัสสีข้อความสีดำ */
+}
+
+h2 {
+    margin-bottom: 10px;
+}
+h4{
+    margin-bottom: 20px;
+}
+#noti{
+   color: red;
+}
+#text{
+    font-size: 20px;
+}
+/* เพิ่มระยะห่างด้านล่างของ table1 */
+#table1 {
+    margin-bottom: 0.1px;  
+}
+/* เพิ่มระยะห่างด้านบนของ table2 */
+#table2 {
+    margin-top:0.1px;
+    text-align: left;
+
+}
+#table3 {
+    margin-top:0.1px;
+    text-align: left;
+
+}
+#table1 {
+    margin-bottom: 0.1px;
+}
+#table3 #priceL {
+    display: none;
+}
+table {
+    margin: 0.1px auto;
+    border-collapse: collapse;
+    width: 50%;
+    flex: 1; 
+    margin-bottom: 0.1px;
+}
+th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+table th {
+    background-color: rgba(116, 3, 171, 0.5);
+    color: white;
+}
+/* ลบเส้นขอบด้านบนและด้านข้างของตาราง */
+table, th, td {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+th, td {
+    width: 33.33%;
+}
+/* CSS */
+img {
+    height: 80px;
+    display: block; 
+    margin: 0 auto; 
+    margin-top: 20px;
+
+}
+
+#goldG965BBid,#goldG965BOffer,
+#goldG9999BBid,#goldG9999BOffer{
+    font-weight: bold;
+    font-size: 20px;
+    color: #000000;
+    width: 33.33%;
+    text-align: center;
+}
